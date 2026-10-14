@@ -77,6 +77,10 @@ install(DIRECTORY ${PROJECT_NAME}/
   FILES_MATCHING PATTERN "*.py"
 )
 
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 # Install Python node scripts (executables run via ros2 run / launch)
 install(PROGRAMS
   scripts/simulator.py

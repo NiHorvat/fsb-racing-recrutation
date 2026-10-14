@@ -1,6 +1,10 @@
 #include <cassert>
+#include <cstdint>
+#include <fstream>
 #include <rclcpp/logging.hpp>
+#include <rclcpp/parameter.hpp>
 #include <rclcpp/rclcpp.hpp>
+#include <rclcpp/time.hpp>
 #include <std_msgs/msg/float64.hpp>
 #include <geometry_msgs/msg/point.hpp>
 #include <fsbrt_ros2_2026/msg/vehicle_state.hpp>
@@ -9,12 +13,21 @@
 #include <utility>
 #include <memory>
 #include <format>
-
+#include <iostream>
 
 #include <nanospline/Bezier.h>
 #include <Eigen/Dense>
 
 #define MAX_VELOCITY 19.5
+
+
+
+
+static constexpr auto DEGREE = 4;
+static_assert(DEGREE < 15);
+
+constexpr auto BASE_SPEED{0.5};
+constexpr auto MAX_GAIN_SPEED{9.0};
 
 /*
 Author:
@@ -37,115 +50,74 @@ public:
         // Publisher
         desired_velocity_pub_ = this->create_publisher<std_msgs::msg::Float64>(
             "velocity_logic/desired_velocity", 1);
+
+        this->declare_parameter("max_speed_gain", 9.0);
+        this->declare_parameter("base_speed", 1.4);
+        this->declare_parameter("exp_a", 0.948148);
+        this->declare_parameter("exp_b", 0.00317121);
+        this->declare_parameter("curve_degree", 4);
+
+        this->max_speed_gain_ = this->get_parameter("max_speed_gain").as_double();
+        this->base_speed_ = this->get_parameter("base_speed").as_double();
+        this->exp_a_ = this->get_parameter("exp_a").as_double();
+        this->exp_b_ = this->get_parameter("exp_b").as_double();
+
+
+        RCLCPP_INFO(this->get_logger(),
+        "Parameters: max_speed_gain=%.3f, base_speed=%.3f, exp_a=%.6f, exp_b=%.8f",
+        max_speed_gain_, base_speed_, exp_a_, exp_b_);
+
+        curvature_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/curvature.csv");
+        
+
     }
 
 private:
-    // matches the the waypoints onto a graph line and returns the average error
-    // if error LARGE then incoming section NOT LINE, if error small then incoming section LINE-esqe
-    // this outputs square error
-    double linear_regression_err(std::vector<std::pair<double,double>> horizon){
-
-        double alpha{0.0}, beta={0.0}, avg_err{0.0}, x_avg{0.0}, y_avg{0.0}, tmp1{0.0}, tmp2{0.0}, max_err{-1};
-
-        for(auto i{0UL}; i < horizon.size(); i++)
-        {
-            x_avg += horizon[i].first;
-            y_avg += horizon[i].second;
-
-        }
-        x_avg /= horizon.size();
-        y_avg /= horizon.size();
-
-
-        for(const auto &el : horizon){
-            tmp1 += (el.first - x_avg) * (el.second - y_avg);
-            tmp2 += (el.first - x_avg) * (el.first - x_avg);
-        }
-
-        beta = tmp1 / tmp2;
-        alpha = y_avg - beta * x_avg;
-
-        // RCLCPP_INFO(this->get_logger(), "horizon size : %lu", horizon.size());
-        // RCLCPP_INFO(this->get_logger(), "alpha : %f beta : %f",alpha, beta);
-        
-        // eq : y = alpha +  x * beta
-
-
-        // now we calculate the total error
-
-
-        for(const auto &el : horizon){
-            std::pair<double,double> predicted;
-            predicted.first = el.first;
-            predicted.second = alpha +  el.first * beta;
-            auto err =  sqrt(
-                (predicted.first - el.first) * (predicted.first - el.first) + 
-                (predicted.second - el.second) * (predicted.second - el.second)
-            );
-            avg_err += err;
-            if(err > max_err) max_err = err;
-        }
-
-        //return avg_err / horizon.size();
-        return max_err;
-    }
-
-
-    double curvature(std::pair<double, double> p1, std::pair<double, double> p2, std::pair<double, double> p3){
-
-        std::pair<double, double> u, v;
-        double n, m, w_u, w_v, kapa;
-        
-        u.first = p1.first - p2.first;
-        u.second = p1.second - p2.second;
-
-        v.first = p3.first - p2.first;
-        v.second = p3.second - p3.second;
-
-        w_u = pow(u.first,2) + pow(u.second,2);
-        w_v = pow(v.first,2) + pow(v.second,2);
-
-
-        n = u.first * v.second - v.first * u.second;
-        
-        auto tmp1 = pow((w_u * v.first - w_v*u.first),2);
-        auto tmp2 = pow((w_u * v.second - w_v*u.second),2);
-        if(tmp1 + tmp2 <= 0.0 ) return 0.0;
-        
-        kapa = 2 * n / sqrt(tmp1 + tmp2);
-        
-        return kapa;
-
-    }
 
 
     // calculates the new speed based on the curvature of the spline
-    double curvature_nano_spline_speed_gain(std::pair<double,double> car_pos, std::vector<std::pair<double,double>> horizon){
+    double curvature_calculation(std::pair<double,double> car_pos, std::vector<std::pair<double,double>> horizon) const{
 
-        static constexpr auto degree = 4;
         
         
-        Eigen::MatrixXd matrix(degree,2);
+        Eigen::MatrixXd matrix(DEGREE,2);
+
+        // first element is the current car position
         matrix(0,0) = car_pos.first;
         matrix(0,1) = car_pos.second;
-        for(auto i{1U}; i < degree; i++){
+
+
+        for(auto i{1U}; i < DEGREE; i++){
             matrix(i,0) = horizon[i].first;
             matrix(i,1) = horizon[i].second;
         }
-
-        nanospline::Bezier<double, 2, degree - 1> curve;
+        nanospline::Bezier<double, 2, DEGREE - 1> curve;
         curve.set_control_points(matrix);
         
-        auto curvature_normed = abs(curve.get_turning_angle(0.0,1.0));
+        auto curvature = abs(curve.get_turning_angle(0.0,1.0));
         std::cout << "matrix : \n" << matrix << std::endl;
-        std::cout << "spline curvature norm" <<  curvature_normed << std::endl;; 
-
-        // 1.87208\cdot\left(4.34894\times10^{-7}\right)^{x}
+        std::cout << "spline curvature norm" <<  curvature << std::endl;; 
 
 
-        return abs(1.87208 * pow(4.34894 * pow(10,-7), curvature_normed));
+
+        return fmin(1,curvature);
         
 
+    }
+
+    // calculates the speed based on a speed curve -> the curve is pulled from https://www.desmos.com/calculator/oopmzrndtk 
+    double get_speed(const double curvature) const{
+
+        // speed gain equation
+        const auto x =  this->exp_a_ * (pow(this->exp_b_,curvature));
+        //const auto x = -2.5 * curvature + 1;
+
+        auto y = fmin(this->max_speed_gain_  * x, this->max_speed_gain_);
+        double speed = fmax(y,0.0) + this->base_speed_; 
+
+        //RCLCPP_INFO(this->get_logger(), "max_err %f", max_err);
+
+        return speed;
     }
 
 
@@ -158,67 +130,43 @@ private:
         double current_velocity = msg->current_velocity;
         double current_theta = msg->current_theta;
         geometry_msgs::msg::Point current_position = msg->current_position;
+        const auto curr_pos_pair = std::make_pair(current_position.x, current_position.y);
         // ----------------------------------------------------------
         // -YOURRCLCPP_INFO CODE START------------------------------------------
         // ----------------------------------------------------------
         // TODO: Implement your logic for assigning velocity using the data from subscribers
 
-        // const auto horizon_dbg = [&](){
-        //     std::string output = ""; 
-        //     for(const auto &el : horizon) 
-        //         output += std::format("({}, {})", el.first, el.second);
-        //     return output;
-        // };
-        // RCLCPP_INFO(this->get_logger(), "%s", horizon_dbg().c_str());
-        //auto test = std::vector<std::pair<double,double>>(horizon.cbegin(),horizon.cbegin() + 6);
-        //auto max_err = linear_regression_err(horizon);
+                            
+                
+        const auto curvature = curvature_calculation(curr_pos_pair,horizon);
+        // curvature_log << count << "," << curvature << std::endl;
+        // count++;
+        auto desired_velocity = get_speed(curvature);
+
+        const auto& next_point = horizon[0];
+        const double angle = std::atan2(next_point.second - curr_pos_pair.second,
+                                            next_point.first  - curr_pos_pair.first);
+        const double diff_angle = std::remainder(angle - current_theta, 2.0 * M_PI);
+
+            const auto now = this->now();
+            if (std::abs(diff_angle) > M_PI / 2.0) {
+                RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                    "Heading error %.2f rad > 90 deg, slowing down to base_speed", diff_angle);
+                slow_until_ = now + rclcpp::Duration::from_seconds(2.5);
+            }
+            if (now < slow_until_) {
+                desired_velocity = std::min(desired_velocity, this->base_speed_);
+            }
 
 
-        // auto kapa = curvature(
-        //     horizon[2], 
-        //     horizon[4],
-        //     horizon[8]
-        // );
-        
-        
-        
-        // std::vector<double> curvatures;
-        // std::string curvatures_str = "";
-        // for(auto i{0U}; i < horizon.size()-3; i++){
-        //     auto r = curvature(horizon[i], horizon[i+1], horizon[i+2]);
-        //     curvatures.push_back(
-        //         r
-        //     );
-        //     curvatures_str += std::format(" {} ",r);
-        // }
-        
-                
-                
-                
-        // map 0.0 - 0.5 to 0 - 100
-                
-        auto speed_gain = curvature_nano_spline_speed_gain(std::make_pair(current_position.x, current_position.y),horizon);
-        
-        constexpr auto base_speed{.9};
-        constexpr auto max_gain_speed{9.0};
-        // speed gain equation
-        auto curvature_speed = fmin(max_gain_speed  * speed_gain, max_gain_speed);
-        double desired_velocity = fmax(curvature_speed,0.0) + base_speed; 
-
-        //RCLCPP_INFO(this->get_logger(), "max_err %f", max_err);
-        RCLCPP_INFO(this->get_logger(), "speed %f", desired_velocity);
-        
-
-        // if(max_err <=1.2) desired_velocity = 5;
-        // else if(max_err > 1.2 && max_err < 1.5) desired_velocity = 2;
-        // else desired_velocity = 1.2;
-        
 
         // ----------------------------------------------------------
         // -YOUR CODE END------------------------------------------
         // ----------------------------------------------------------
-
         if(desired_velocity>MAX_VELOCITY) desired_velocity=MAX_VELOCITY;
+
+        RCLCPP_INFO(this->get_logger(), "desired speed %f", desired_velocity);
+
 
         std_msgs::msg::Float64 desired_velocity_msg;
         desired_velocity_msg.data = desired_velocity;
@@ -227,6 +175,19 @@ private:
 
     rclcpp::Subscription<fsbrt_ros2_2026::msg::VehicleState>::SharedPtr state_sub_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr desired_velocity_pub_;
+
+
+
+    double max_speed_gain_{0.0};
+    double base_speed_{0.0};
+    double exp_a_{0.0};
+    double exp_b_{0.0};
+
+
+    std::ofstream curvature_log;
+    uint64_t count{0};
+    rclcpp::Time slow_until_{0, 0, RCL_ROS_TIME};
+
 };
 
 int main(int argc, char **argv) {
@@ -235,6 +196,8 @@ int main(int argc, char **argv) {
     RCLCPP_INFO(node->get_logger(), "Velocity Logic node ready.");
     rclcpp::spin(node);
     rclcpp::shutdown();
+    
+
     return 0;
 }
 
