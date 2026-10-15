@@ -1,6 +1,8 @@
 velocity_logic:
   ros__parameters:
-    max_speed_gain: 9.0
-    base_speed: 0.7
+    max_speed_gain: 14.0
+    base_speed: 1.2
     exp_a: 0.948148
     exp_b: 0.00317121
+    recovery_time: 1.0
+    brake_margin: 0.7

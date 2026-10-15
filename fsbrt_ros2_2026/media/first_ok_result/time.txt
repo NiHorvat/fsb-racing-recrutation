@@ -2,3 +2,4 @@
 
 [controller.py-2] [INFO] [1792064418.218417372] [controller]: Your lap time is: 199.63seconds
 
+[controller.py-2] [INFO] [1792085638.976797953] [controller]: Your lap time is: 153.199seconds
