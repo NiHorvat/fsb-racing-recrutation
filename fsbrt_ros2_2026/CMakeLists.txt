@@ -18,14 +18,14 @@ find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(Eigen3 REQUIRED NO_MODULE)                      # ADDED
+find_package(Eigen3 REQUIRED NO_MODULE)                     
 
-include(FetchContent)                                        # ADDED
-FetchContent_Declare(nanospline                              # ADDED
-  GIT_REPOSITORY https://github.com/qnzhou/nanospline.git    # ADDED
-  GIT_TAG main                                               # ADDED
-  SOURCE_SUBDIR __no_cmake__)                                # ADDED
-FetchContent_MakeAvailable(nanospline)                       # ADDED
+include(FetchContent)                                        
+FetchContent_Declare(nanospline                              
+  GIT_REPOSITORY https://github.com/qnzhou/nanospline.git    
+  GIT_TAG main                                               
+  SOURCE_SUBDIR __no_cmake__)                                
+FetchContent_MakeAvailable(nanospline)                       
 
 #######################################
 ## Declare ROS messages (rosidl)     ##
@@ -52,8 +52,8 @@ ament_target_dependencies(velocity_logic
 rosidl_get_typesupport_target(cpp_typesupport_target
 ${PROJECT_NAME} "rosidl_typesupport_cpp")
 target_link_libraries(velocity_logic "${cpp_typesupport_target}")
-target_link_libraries(velocity_logic Eigen3::Eigen)                                       # ADDED
-target_include_directories(velocity_logic SYSTEM PRIVATE ${nanospline_SOURCE_DIR}/include) # ADDED
+target_link_libraries(velocity_logic Eigen3::Eigen)                                      
+target_include_directories(velocity_logic SYSTEM PRIVATE ${nanospline_SOURCE_DIR}/include) 
 
 #############
 ## Install ##

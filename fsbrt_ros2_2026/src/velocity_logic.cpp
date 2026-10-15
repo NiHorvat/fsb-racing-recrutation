@@ -26,8 +26,6 @@
 static constexpr auto DEGREE = 4;
 static_assert(DEGREE < 15);
 
-constexpr auto BASE_SPEED{0.5};
-constexpr auto MAX_GAIN_SPEED{9.0};
 
 /*
 Author:
@@ -55,7 +53,6 @@ public:
         this->declare_parameter("base_speed", 1.4);
         this->declare_parameter("exp_a", 0.948148);
         this->declare_parameter("exp_b", 0.00317121);
-        this->declare_parameter("curve_degree", 4);
 
         this->max_speed_gain_ = this->get_parameter("max_speed_gain").as_double();
         this->base_speed_ = this->get_parameter("base_speed").as_double();
@@ -68,7 +65,7 @@ public:
         max_speed_gain_, base_speed_, exp_a_, exp_b_);
 
         curvature_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/curvature.csv");
-        
+        velocity_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/velocity.csv");
 
     }
 
@@ -139,8 +136,8 @@ private:
                             
                 
         const auto curvature = curvature_calculation(curr_pos_pair,horizon);
-        // curvature_log << count << "," << curvature << std::endl;
-        // count++;
+        curvature_log << curr_pos_pair.first <<"," << curr_pos_pair.second << "," << curvature << std::endl;
+        velocity_log << curr_pos_pair.first <<"," << curr_pos_pair.second << "," << current_velocity << std::endl;
         auto desired_velocity = get_speed(curvature);
 
         const auto& next_point = horizon[0];
@@ -185,7 +182,7 @@ private:
 
 
     std::ofstream curvature_log;
-    uint64_t count{0};
+    std::ofstream velocity_log;
     rclcpp::Time slow_until_{0, 0, RCL_ROS_TIME};
 
 };
