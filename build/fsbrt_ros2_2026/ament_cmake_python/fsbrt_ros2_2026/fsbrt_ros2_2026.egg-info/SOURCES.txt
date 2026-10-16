@@ -1,8 +1,0 @@
-setup.py
-fsbrt_ros2_2026/__init__.py
-fsbrt_ros2_2026.egg-info/PKG-INFO
-fsbrt_ros2_2026.egg-info/SOURCES.txt
-fsbrt_ros2_2026.egg-info/dependency_links.txt
-fsbrt_ros2_2026.egg-info/top_level.txt
-fsbrt_ros2_2026/msg/__init__.py
-fsbrt_ros2_2026/msg/_vehicle_state.py

@@ -1,3 +1,0 @@
-/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/CMakeFiles/nanospline-populate.dir
-/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/CMakeFiles/edit_cache.dir
-/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/CMakeFiles/rebuild_cache.dir

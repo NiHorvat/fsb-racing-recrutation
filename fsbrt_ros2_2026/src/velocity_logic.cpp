@@ -114,10 +114,10 @@ private:
         return lo;
     }
 
-    // calculates the speed based on a speed curve -> the curve is pulled from https://www.desmos.com/calculator/oopmzrndtk 
+    // calculates the speed based on a speed curve -> the curve is pulled from https://www.desmos.com/calculator/ 
     double get_speed(const double curvature) const{
 
-        // speed gain equation
+        // speed gain equation : exponential
         const auto x =  this->exp_a_ * (pow(this->exp_b_,curvature));
         //const auto x = -2.5 * curvature + 1;
 

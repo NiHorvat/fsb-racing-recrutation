@@ -1,6 +1,0 @@
-{
-  "package_name": "fsbrt_ros2_2026",
-  "non_idl_tuples": [
-    "/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026:msg/VehicleState.msg"
-  ]
-}
