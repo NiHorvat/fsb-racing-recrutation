@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/CMakeFiles/nanospline-populate"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/CMakeFiles/nanospline-populate.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/CMakeFiles/nanospline-populate-complete.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-build.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-configure.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-download.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-install.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-patch.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-test.rule"
+		},
+		{
+			"file" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/_deps/nanospline-subbuild/nanospline-populate-prefix/src/nanospline-populate-stamp/nanospline-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nanospline-populate"
+		],
+		"name" : "nanospline-populate"
+	}
+}

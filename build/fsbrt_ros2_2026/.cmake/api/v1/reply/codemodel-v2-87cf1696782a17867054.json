@@ -1,0 +1,276 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f6a92083943ca3efc679.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "fsbrt_ros2_2026__py",
+					"jsonFile" : "directory-fsbrt_ros2_2026__py-4d3a63ff57f21e86c9c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/fsbrt_ros2_2026__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "fsbrt_ros2_2026__rs",
+					"jsonFile" : "directory-fsbrt_ros2_2026__rs-89658e0f14c024924f5f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026/fsbrt_ros2_2026__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "fsbrt_ros2_2026",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_fsbrt_ros2_2026_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_fsbrt_ros2_2026_egg-b9ddb9ec9ffea9610fb6.json",
+					"name" : "ament_cmake_python_build_fsbrt_ros2_2026_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_fsbrt_ros2_2026::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_fsbrt_ros2_2026-2893d01d62a5acd0ea01.json",
+					"name" : "ament_cmake_python_copy_fsbrt_ros2_2026",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026-c5f8af0367490f1d8be8.json",
+					"name" : "fsbrt_ros2_2026",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__cpp-2b5464c8be69444981b8.json",
+					"name" : "fsbrt_ros2_2026__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fsbrt_ros2_2026__py::@f3602c81181a5a933f78",
+					"jsonFile" : "target-fsbrt_ros2_2026__py-27d8efe723daaa7106dc.json",
+					"name" : "fsbrt_ros2_2026__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_generator_c-8207f02000556fe0540a.json",
+					"name" : "fsbrt_ros2_2026__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_generator_py-16fe2a759ebdc7c476ff.json",
+					"name" : "fsbrt_ros2_2026__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_generator_type_description-0223eaa9f409d9e8da3c.json",
+					"name" : "fsbrt_ros2_2026__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_typesupport_c-66cf8a81493b42307204.json",
+					"name" : "fsbrt_ros2_2026__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_typesupport_cpp-0edf7dbf0cdc01e6cccd.json",
+					"name" : "fsbrt_ros2_2026__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_typesupport_fastrtps_c-30f570513ee8e4c27c56.json",
+					"name" : "fsbrt_ros2_2026__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp-21250faf109de32a2d36.json",
+					"name" : "fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_typesupport_introspection_c-ab170016e8b927933325.json",
+					"name" : "fsbrt_ros2_2026__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026__rosidl_typesupport_introspection_cpp-f16f3662d0b426217718.json",
+					"name" : "fsbrt_ros2_2026__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "fsbrt_ros2_2026__rs::@f9d1e9e9bc884af3b963",
+					"jsonFile" : "target-fsbrt_ros2_2026__rs-371a6f70dae16a6d3281.json",
+					"name" : "fsbrt_ros2_2026__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026_s__rosidl_typesupport_c-b6f35446376ab679a742.json",
+					"name" : "fsbrt_ros2_2026_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c-590ff4f1cef4614ad7a3.json",
+					"name" : "fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c-75acf0038804f6ae5111.json",
+					"name" : "fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fsbrt_ros2_2026_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fsbrt_ros2_2026_uninstall-63dcd8981e0c41911b65.json",
+					"name" : "fsbrt_ros2_2026_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d2faec0e4c1b334903bf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velocity_logic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velocity_logic-cd37c89636e38bbce3b0.json",
+					"name" : "velocity_logic",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026",
+		"source" : "/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

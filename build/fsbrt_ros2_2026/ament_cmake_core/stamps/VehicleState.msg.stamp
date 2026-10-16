@@ -1,0 +1,4 @@
+geometry_msgs/Polygon horizon
+float64 current_velocity
+float64 current_theta
+geometry_msgs/Point current_position

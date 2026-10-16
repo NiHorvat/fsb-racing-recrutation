@@ -1,0 +1,423 @@
+[0.000000] (-) TimerEvent: {}
+[0.000222] (fsbrt_ros2_2026) JobQueued: {'identifier': 'fsbrt_ros2_2026', 'dependencies': OrderedDict()}
+[0.000585] (fsbrt_ros2_2026) JobStarted: {'identifier': 'fsbrt_ros2_2026'}
+[0.010962] (fsbrt_ros2_2026) JobProgress: {'identifier': 'fsbrt_ros2_2026', 'progress': 'cmake'}
+[0.011467] (fsbrt_ros2_2026) Command: {'cmd': ['/usr/bin/cmake', '/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DCMAKE_INSTALL_PREFIX=/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026'], 'cwd': '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', 'env': OrderedDict({'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'HYPRLAND_INSTANCE_SIGNATURE': 'efb50993780079460b0cbed1363e2166a2de1d9f_1792147895_490708054', 'USER': 'nh-laptop', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'wayland', 'XCURSOR_SIZE': '24', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nh-laptop', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/home/nh-laptop/FSB-racing', 'LESS': '-R', 'DESKTOP_SESSION': 'hyprland', 'ZSH': '/home/nh-laptop/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'jazzy', 'ALACRITTY_SOCKET': '/run/user/1000/Alacritty-wayland-1-4944.sock', 'LOGNAME': 'nh-laptop', 'WINDOWID': '105330851237216', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'ALACRITTY_LOG': '/tmp/Alacritty-4944.log', 'TERM': 'xterm-256color', 'USERNAME': 'nh-laptop', 'XDG_SESSION_ID': '2', 'HL_INITIAL_WORKSPACE_TOKEN': 'a229b76a-d7f4-4e48-bd61-680bdd4cdcd0', 'PATH': '/home/nh-laptop/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/gnupg/S.gpg-agent.ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'GDMSESSION': 'hyprland', 'QT_ACCESSIBILITY': '1', '_JAVA_AWT_WM_NONREPARENTING': '1', 'ALACRITTY_WINDOW_ID': '105330851237216', 'XDG_VTNR': '2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', 'XDG_BACKEND': 'wayland', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099765] (-) TimerEvent: {}
+[0.107953] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.172291] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.188783] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199839] (-) TimerEvent: {}
+[0.267547] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.273019] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.274711] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.275117] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.283849] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299939] (-) TimerEvent: {}
+[0.367792] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.373470] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.373695] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.374009] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.382993] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.400006] (-) TimerEvent: {}
+[0.486924] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.500122] (-) TimerEvent: {}
+[0.576821] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.600198] (-) TimerEvent: {}
+[0.614214] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.624550] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.638005] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.652113] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700301] (-) TimerEvent: {}
+[0.714925] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.717578] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.792518] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.800387] (-) TimerEvent: {}
+[0.810956] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.827437] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.891594] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rclpy: 7.1.12 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[0.892894] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.900476] (-) TimerEvent: {}
+[0.906811] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.919845] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.934399] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.000639] (-) TimerEvent: {}
+[1.101173] (-) TimerEvent: {}
+[1.202127] (-) TimerEvent: {}
+[1.302492] (-) TimerEvent: {}
+[1.403220] (-) TimerEvent: {}
+[1.503930] (-) TimerEvent: {}
+[1.604643] (-) TimerEvent: {}
+[1.705378] (-) TimerEvent: {}
+[1.806457] (-) TimerEvent: {}
+[1.906824] (-) TimerEvent: {}
+[2.007548] (-) TimerEvent: {}
+[2.107960] (-) TimerEvent: {}
+[2.208360] (-) TimerEvent: {}
+[2.308660] (-) TimerEvent: {}
+[2.409026] (-) TimerEvent: {}
+[2.509599] (-) TimerEvent: {}
+[2.610515] (-) TimerEvent: {}
+[2.710899] (-) TimerEvent: {}
+[2.811304] (-) TimerEvent: {}
+[2.912012] (-) TimerEvent: {}
+[3.012533] (-) TimerEvent: {}
+[3.113342] (-) TimerEvent: {}
+[3.214022] (-) TimerEvent: {}
+[3.314349] (-) TimerEvent: {}
+[3.415031] (-) TimerEvent: {}
+[3.515812] (-) TimerEvent: {}
+[3.616531] (-) TimerEvent: {}
+[3.717143] (-) TimerEvent: {}
+[3.817494] (-) TimerEvent: {}
+[3.917795] (-) TimerEvent: {}
+[4.018108] (-) TimerEvent: {}
+[4.118386] (-) TimerEvent: {}
+[4.218666] (-) TimerEvent: {}
+[4.318964] (-) TimerEvent: {}
+[4.367936] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[4.419079] (-) TimerEvent: {}
+[4.519372] (-) TimerEvent: {}
+[4.619704] (-) TimerEvent: {}
+[4.720006] (-) TimerEvent: {}
+[4.820287] (-) TimerEvent: {}
+[4.920575] (-) TimerEvent: {}
+[4.976489] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.020714] (-) TimerEvent: {}
+[5.121009] (-) TimerEvent: {}
+[5.212547] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.217808] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[5.221088] (-) TimerEvent: {}
+[5.316266] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[5.321184] (-) TimerEvent: {}
+[5.421413] (-) TimerEvent: {}
+[5.521702] (-) TimerEvent: {}
+[5.621991] (-) TimerEvent: {}
+[5.674599] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.722100] (-) TimerEvent: {}
+[5.758522] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[5.762158] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.786407] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.822170] (-) TimerEvent: {}
+[5.830316] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.830639] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.830746] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.872998] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.873094] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.881962] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.882175] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[5.892791] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.898465] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.922286] (-) TimerEvent: {}
+[5.941067] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.941167] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.950013] (fsbrt_ros2_2026) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.953060] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Configuring done (5.9s)\n'}
+[5.986819] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.995212] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Build files have been written to: /home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026\n'}
+[6.008876] (fsbrt_ros2_2026) CommandEnded: {'returncode': 0}
+[6.009497] (fsbrt_ros2_2026) JobProgress: {'identifier': 'fsbrt_ros2_2026', 'progress': 'build'}
+[6.010134] (fsbrt_ros2_2026) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', '--', '-j16', '-l16'], 'cwd': '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', 'env': OrderedDict({'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'HYPRLAND_INSTANCE_SIGNATURE': 'efb50993780079460b0cbed1363e2166a2de1d9f_1792147895_490708054', 'USER': 'nh-laptop', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'wayland', 'XCURSOR_SIZE': '24', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nh-laptop', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/home/nh-laptop/FSB-racing', 'LESS': '-R', 'DESKTOP_SESSION': 'hyprland', 'ZSH': '/home/nh-laptop/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'jazzy', 'ALACRITTY_SOCKET': '/run/user/1000/Alacritty-wayland-1-4944.sock', 'LOGNAME': 'nh-laptop', 'WINDOWID': '105330851237216', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'ALACRITTY_LOG': '/tmp/Alacritty-4944.log', 'TERM': 'xterm-256color', 'USERNAME': 'nh-laptop', 'XDG_SESSION_ID': '2', 'HL_INITIAL_WORKSPACE_TOKEN': 'a229b76a-d7f4-4e48-bd61-680bdd4cdcd0', 'PATH': '/home/nh-laptop/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/gnupg/S.gpg-agent.ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'GDMSESSION': 'hyprland', 'QT_ACCESSIBILITY': '1', '_JAVA_AWT_WM_NONREPARENTING': '1', 'ALACRITTY_WINDOW_ID': '105330851237216', 'XDG_VTNR': '2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', 'XDG_BACKEND': 'wayland', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.022400] (-) TimerEvent: {}
+[6.059631] (fsbrt_ros2_2026) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[6.059863] (fsbrt_ros2_2026) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[6.067496] (fsbrt_ros2_2026) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_fsbrt_ros2_2026\n'}
+[6.122523] (-) TimerEvent: {}
+[6.194166] (fsbrt_ros2_2026) StdoutLine: {'line': b'[  5%] Built target fsbrt_ros2_2026__rosidl_generator_type_description\n'}
+[6.203602] (fsbrt_ros2_2026) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.205235] (fsbrt_ros2_2026) StdoutLine: {'line': b'running egg_info\n'}
+[6.205876] (fsbrt_ros2_2026) StdoutLine: {'line': b'creating fsbrt_ros2_2026.egg-info\n'}
+[6.211970] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.212162] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 10%] Built target fsbrt_ros2_2026__rs\n'}
+[6.215996] (fsbrt_ros2_2026) StdoutLine: {'line': b'writing fsbrt_ros2_2026.egg-info/PKG-INFO\n'}
+[6.216167] (fsbrt_ros2_2026) StdoutLine: {'line': b'writing dependency_links to fsbrt_ros2_2026.egg-info/dependency_links.txt\n'}
+[6.216282] (fsbrt_ros2_2026) StdoutLine: {'line': b'writing top-level names to fsbrt_ros2_2026.egg-info/top_level.txt\n'}
+[6.216368] (fsbrt_ros2_2026) StdoutLine: {'line': b"writing manifest file 'fsbrt_ros2_2026.egg-info/SOURCES.txt'\n"}
+[6.222594] (-) TimerEvent: {}
+[6.248880] (fsbrt_ros2_2026) StdoutLine: {'line': b"reading manifest file 'fsbrt_ros2_2026.egg-info/SOURCES.txt'\n"}
+[6.249303] (fsbrt_ros2_2026) StdoutLine: {'line': b"writing manifest file 'fsbrt_ros2_2026.egg-info/SOURCES.txt'\n"}
+[6.283774] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_fsbrt_ros2_2026_egg\n'}
+[6.322699] (-) TimerEvent: {}
+[6.363847] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 10%] Built target fsbrt_ros2_2026__cpp\n'}
+[6.379953] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026__rosidl_generator_c.dir/rosidl_generator_c/fsbrt_ros2_2026/msg/detail/vehicle_state__description.c.o\x1b[0m\n'}
+[6.380189] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026__rosidl_generator_c.dir/rosidl_generator_c/fsbrt_ros2_2026/msg/detail/vehicle_state__functions.c.o\x1b[0m\n'}
+[6.380244] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026__rosidl_generator_c.dir/rosidl_generator_c/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.c.o\x1b[0m\n'}
+[6.422835] (-) TimerEvent: {}
+[6.430875] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libfsbrt_ros2_2026__rosidl_generator_c.so\x1b[0m\n'}
+[6.468647] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 21%] Built target fsbrt_ros2_2026__rosidl_generator_c\n'}
+[6.479019] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.479230] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.479272] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.479305] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.479335] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.479363] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.522956] (-) TimerEvent: {}
+[6.623280] (-) TimerEvent: {}
+[6.660837] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fsbrt_ros2_2026__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fsbrt_ros2_2026/msg/vehicle_state__type_support.cpp.o\x1b[0m\n'}
+[6.661054] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fsbrt_ros2_2026__rosidl_typesupport_c.dir/rosidl_typesupport_c/fsbrt_ros2_2026/msg/vehicle_state__type_support.cpp.o\x1b[0m\n'}
+[6.677845] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.c.o\x1b[0m\n'}
+[6.678063] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/fsbrt_ros2_2026__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.cpp.o\x1b[0m\n'}
+[6.691168] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fsbrt_ros2_2026/msg/detail/dds_fastrtps/vehicle_state__type_support.cpp.o\x1b[0m\n'}
+[6.691336] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/fsbrt_ros2_2026__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.700446] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libfsbrt_ros2_2026__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.709465] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libfsbrt_ros2_2026__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.723385] (-) TimerEvent: {}
+[6.735025] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 59%] Built target fsbrt_ros2_2026__rosidl_typesupport_c\n'}
+[6.738290] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 59%] Built target fsbrt_ros2_2026__rosidl_typesupport_introspection_c\n'}
+[6.823485] (-) TimerEvent: {}
+[6.873254] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libfsbrt_ros2_2026__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.886376] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libfsbrt_ros2_2026__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.906959] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 64%] Built target fsbrt_ros2_2026__rosidl_typesupport_cpp\n'}
+[6.923617] (-) TimerEvent: {}
+[6.926791] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/velocity_logic.dir/src/velocity_logic.cpp.o\x1b[0m\n'}
+[6.940903] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 67%] Built target fsbrt_ros2_2026__rosidl_typesupport_introspection_cpp\n'}
+[6.980460] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libfsbrt_ros2_2026__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.980986] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libfsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.018164] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 72%] Built target fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp\n'}
+[7.019304] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 72%] Built target fsbrt_ros2_2026__rosidl_typesupport_fastrtps_c\n'}
+[7.023700] (-) TimerEvent: {}
+[7.036827] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 72%] Built target fsbrt_ros2_2026\n'}
+[7.053263] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.123786] (-) TimerEvent: {}
+[7.205700] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 75%] Built target fsbrt_ros2_2026__py\n'}
+[7.221477] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026__rosidl_generator_py.dir/rosidl_generator_py/fsbrt_ros2_2026/msg/_vehicle_state_s.c.o\x1b[0m\n'}
+[7.223869] (-) TimerEvent: {}
+[7.324026] (-) TimerEvent: {}
+[7.326430] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library libfsbrt_ros2_2026__rosidl_generator_py.so\x1b[0m\n'}
+[7.362324] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 81%] Built target fsbrt_ros2_2026__rosidl_generator_py\n'}
+[7.378156] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/fsbrt_ros2_2026/_fsbrt_ros2_2026_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.378306] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026_s__rosidl_typesupport_c.dir/rosidl_generator_py/fsbrt_ros2_2026/_fsbrt_ros2_2026_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.378344] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/fsbrt_ros2_2026/_fsbrt_ros2_2026_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.424150] (-) TimerEvent: {}
+[7.443508] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.443682] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.445083] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.467395] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 97%] Built target fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c\n'}
+[7.467562] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 97%] Built target fsbrt_ros2_2026_s__rosidl_typesupport_c\n'}
+[7.469132] (fsbrt_ros2_2026) StdoutLine: {'line': b'[ 97%] Built target fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c\n'}
+[7.524257] (-) TimerEvent: {}
+[7.624464] (-) TimerEvent: {}
+[7.724671] (-) TimerEvent: {}
+[7.824987] (-) TimerEvent: {}
+[7.925245] (-) TimerEvent: {}
+[8.025513] (-) TimerEvent: {}
+[8.125743] (-) TimerEvent: {}
+[8.226001] (-) TimerEvent: {}
+[8.326213] (-) TimerEvent: {}
+[8.426427] (-) TimerEvent: {}
+[8.526667] (-) TimerEvent: {}
+[8.626933] (-) TimerEvent: {}
+[8.727189] (-) TimerEvent: {}
+[8.827429] (-) TimerEvent: {}
+[8.927664] (-) TimerEvent: {}
+[9.027932] (-) TimerEvent: {}
+[9.128185] (-) TimerEvent: {}
+[9.228449] (-) TimerEvent: {}
+[9.328721] (-) TimerEvent: {}
+[9.428977] (-) TimerEvent: {}
+[9.529235] (-) TimerEvent: {}
+[9.629470] (-) TimerEvent: {}
+[9.729702] (-) TimerEvent: {}
+[9.829959] (-) TimerEvent: {}
+[9.930216] (-) TimerEvent: {}
+[10.030472] (-) TimerEvent: {}
+[10.130730] (-) TimerEvent: {}
+[10.230967] (-) TimerEvent: {}
+[10.331181] (-) TimerEvent: {}
+[10.431410] (-) TimerEvent: {}
+[10.531628] (-) TimerEvent: {}
+[10.631863] (-) TimerEvent: {}
+[10.732117] (-) TimerEvent: {}
+[10.832349] (-) TimerEvent: {}
+[10.932567] (-) TimerEvent: {}
+[11.032779] (-) TimerEvent: {}
+[11.132998] (-) TimerEvent: {}
+[11.233224] (-) TimerEvent: {}
+[11.333464] (-) TimerEvent: {}
+[11.433719] (-) TimerEvent: {}
+[11.533959] (-) TimerEvent: {}
+[11.634201] (-) TimerEvent: {}
+[11.734444] (-) TimerEvent: {}
+[11.834693] (-) TimerEvent: {}
+[11.934939] (-) TimerEvent: {}
+[12.035184] (-) TimerEvent: {}
+[12.135428] (-) TimerEvent: {}
+[12.235671] (-) TimerEvent: {}
+[12.335976] (-) TimerEvent: {}
+[12.436176] (-) TimerEvent: {}
+[12.536422] (-) TimerEvent: {}
+[12.636688] (-) TimerEvent: {}
+[12.736943] (-) TimerEvent: {}
+[12.776521] (fsbrt_ros2_2026) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable velocity_logic\x1b[0m\n'}
+[12.837037] (-) TimerEvent: {}
+[12.937293] (-) TimerEvent: {}
+[13.022864] (fsbrt_ros2_2026) StdoutLine: {'line': b'[100%] Built target velocity_logic\n'}
+[13.031555] (fsbrt_ros2_2026) CommandEnded: {'returncode': 0}
+[13.032019] (fsbrt_ros2_2026) JobProgress: {'identifier': 'fsbrt_ros2_2026', 'progress': 'install'}
+[13.037372] (-) TimerEvent: {}
+[13.039663] (fsbrt_ros2_2026) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026'], 'cwd': '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', 'env': OrderedDict({'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'HYPRLAND_INSTANCE_SIGNATURE': 'efb50993780079460b0cbed1363e2166a2de1d9f_1792147895_490708054', 'USER': 'nh-laptop', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'wayland', 'XCURSOR_SIZE': '24', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nh-laptop', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/home/nh-laptop/FSB-racing', 'LESS': '-R', 'DESKTOP_SESSION': 'hyprland', 'ZSH': '/home/nh-laptop/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'jazzy', 'ALACRITTY_SOCKET': '/run/user/1000/Alacritty-wayland-1-4944.sock', 'LOGNAME': 'nh-laptop', 'WINDOWID': '105330851237216', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'ALACRITTY_LOG': '/tmp/Alacritty-4944.log', 'TERM': 'xterm-256color', 'USERNAME': 'nh-laptop', 'XDG_SESSION_ID': '2', 'HL_INITIAL_WORKSPACE_TOKEN': 'a229b76a-d7f4-4e48-bd61-680bdd4cdcd0', 'PATH': '/home/nh-laptop/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/gnupg/S.gpg-agent.ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'GDMSESSION': 'hyprland', 'QT_ACCESSIBILITY': '1', '_JAVA_AWT_WM_NONREPARENTING': '1', 'ALACRITTY_WINDOW_ID': '105330851237216', 'XDG_VTNR': '2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/nh-laptop/FSB-racing/task/build/fsbrt_ros2_2026', 'XDG_BACKEND': 'wayland', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[13.046315] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.046468] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/ament_index/resource_index/rosidl_interfaces/fsbrt_ros2_2026\n'}
+[13.046672] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/msg/VehicleState.json\n'}
+[13.046821] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026\n'}
+[13.046894] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg\n'}
+[13.046957] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.047044] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/vehicle_state.h\n'}
+[13.047100] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail\n'}
+[13.047177] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__functions.h\n'}
+[13.047229] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__functions.c\n'}
+[13.047306] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.c\n'}
+[13.047354] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__description.c\n'}
+[13.047410] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__struct.h\n'}
+[13.047468] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.h\n'}
+[13.047606] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/library_path.sh\n'}
+[13.047707] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/library_path.dsv\n'}
+[13.047827] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_generator_c.so\n'}
+[13.048179] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_generator_c.so" to ""\n'}
+[13.048257] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026\n'}
+[13.048302] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg\n'}
+[13.048366] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.048403] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail\n'}
+[13.048435] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__rosidl_typesupport_fastrtps_c.h\n'}
+[13.048481] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_fastrtps_c.so\n'}
+[13.048737] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.048822] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026\n'}
+[13.048864] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg\n'}
+[13.048898] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/vehicle_state.hpp\n'}
+[13.048959] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[13.048997] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail\n'}
+[13.049054] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__builder.hpp\n'}
+[13.049088] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.hpp\n'}
+[13.049126] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__struct.hpp\n'}
+[13.049200] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__traits.hpp\n'}
+[13.049311] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026\n'}
+[13.049385] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg\n'}
+[13.049443] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.049479] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail\n'}
+[13.049511] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/dds_fastrtps\n'}
+[13.049567] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.049617] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.049907] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.049945] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026\n'}
+[13.049994] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg\n'}
+[13.050027] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.050078] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail\n'}
+[13.050128] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__rosidl_typesupport_introspection_c.h\n'}
+[13.050175] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.c\n'}
+[13.050303] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_introspection_c.so\n'}
+[13.050591] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.050643] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_c.so\n'}
+[13.050887] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_c.so" to ""\n'}
+[13.050926] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026\n'}
+[13.050975] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg\n'}
+[13.051010] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail\n'}
+[13.051065] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__type_support.cpp\n'}
+[13.051112] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/include/fsbrt_ros2_2026/fsbrt_ros2_2026/msg/detail/vehicle_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.051180] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_introspection_cpp.so\n'}
+[13.051482] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.051521] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_cpp.so\n'}
+[13.051878] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_typesupport_cpp.so" to ""\n'}
+[13.051947] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/pythonpath.sh\n'}
+[13.052097] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/pythonpath.dsv\n'}
+[13.052223] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026-0.0.0-py3.12.egg-info\n'}
+[13.052357] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[13.052471] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[13.052580] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[13.052711] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[13.052846] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026\n'}
+[13.052931] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c.so\n'}
+[13.053066] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/_fsbrt_ros2_2026_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.053172] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg\n'}
+[13.053246] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg/_vehicle_state_s.c\n'}
+[13.053358] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg/_vehicle_state.py\n'}
+[13.053478] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg/__init__.py\n'}
+[13.053573] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_c.so\n'}
+[13.053655] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c.so\n'}
+[13.053750] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/__init__.py\n'}
+[13.053817] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/_fsbrt_ros2_2026_s.ep.rosidl_typesupport_c.c\n'}
+[13.053890] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/_fsbrt_ros2_2026_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.079244] (fsbrt_ros2_2026) StdoutLine: {'line': b"Listing '/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026'...\n"}
+[13.079381] (fsbrt_ros2_2026) StdoutLine: {'line': b"Compiling '/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/__init__.py'...\n"}
+[13.079436] (fsbrt_ros2_2026) StdoutLine: {'line': b"Listing '/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg'...\n"}
+[13.079481] (fsbrt_ros2_2026) StdoutLine: {'line': b"Compiling '/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg/__init__.py'...\n"}
+[13.079525] (fsbrt_ros2_2026) StdoutLine: {'line': b"Compiling '/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/msg/_vehicle_state.py'...\n"}
+[13.082814] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c.so\n'}
+[13.083122] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.083259] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c.so\n'}
+[13.083530] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.083669] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_c.so\n'}
+[13.083924] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/fsbrt_ros2_2026_s__rosidl_typesupport_c.so" to ""\n'}
+[13.084023] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_generator_py.so\n'}
+[13.084267] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/libfsbrt_ros2_2026__rosidl_generator_py.so" to ""\n'}
+[13.084373] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust\n'}
+[13.084484] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/Cargo.toml\n'}
+[13.084546] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/build.rs\n'}
+[13.084607] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/src\n'}
+[13.084644] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/src/msg.rs\n'}
+[13.084705] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/src/msg\n'}
+[13.084743] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/src/msg/rmw.rs\n'}
+[13.084772] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/rust/src/lib.rs\n'}
+[13.084822] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/msg/VehicleState.idl\n'}
+[13.084927] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/msg/VehicleState.msg\n'}
+[13.085032] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/fsbrt_ros2_2026/velocity_logic\n'}
+[13.090127] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/fsbrt_ros2_2026/velocity_logic" to ""\n'}
+[13.090254] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Up-to-date: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026\n'}
+[13.090308] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/drawer.py\n'}
+[13.090532] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/settings.py\n'}
+[13.090794] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/world.py\n'}
+[13.090933] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/python3.12/site-packages/fsbrt_ros2_2026/__init__.py\n'}
+[13.091034] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/config\n'}
+[13.091102] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/config/config.yml\n'}
+[13.091330] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/fsbrt_ros2_2026/simulator.py\n'}
+[13.091578] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/fsbrt_ros2_2026/controller.py\n'}
+[13.091722] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/lib/fsbrt_ros2_2026/velocity_logic.py\n'}
+[13.091922] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/launch\n'}
+[13.092022] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/launch/start_simulation.launch.py\n'}
+[13.092094] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/launch/start_simulation_python.launch.py\n'}
+[13.092279] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/src\n'}
+[13.092375] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/src/central_trajectory.csv\n'}
+[13.092639] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/src/outer_track.csv\n'}
+[13.092868] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/src/inner_track.csv\n'}
+[13.093031] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/ament_index/resource_index/package_run_dependencies/fsbrt_ros2_2026\n'}
+[13.093158] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/ament_index/resource_index/parent_prefix_path/fsbrt_ros2_2026\n'}
+[13.093246] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/ament_prefix_path.sh\n'}
+[13.093307] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/ament_prefix_path.dsv\n'}
+[13.093403] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/path.sh\n'}
+[13.093481] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/environment/path.dsv\n'}
+[13.093547] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/local_setup.bash\n'}
+[13.093637] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/local_setup.sh\n'}
+[13.093733] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/local_setup.zsh\n'}
+[13.093819] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/local_setup.dsv\n'}
+[13.093901] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/package.dsv\n'}
+[13.094013] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/ament_index/resource_index/packages/fsbrt_ros2_2026\n'}
+[13.094136] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_generator_cExport.cmake\n'}
+[13.094236] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.094335] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.094431] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.094528] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_generator_cppExport.cmake\n'}
+[13.094625] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.094734] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.094831] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.094920] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.095018] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_cExport.cmake\n'}
+[13.095110] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.095205] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.095296] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.095392] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_cppExport.cmake\n'}
+[13.095488] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.095582] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_generator_pyExport.cmake\n'}
+[13.095669] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/export_fsbrt_ros2_2026__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.095763] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/rosidl_cmake-extras.cmake\n'}
+[13.095848] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.095935] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.096022] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.096113] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.096197] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.096281] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.096372] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[13.096459] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026Config.cmake\n'}
+[13.096533] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/cmake/fsbrt_ros2_2026Config-version.cmake\n'}
+[13.096616] (fsbrt_ros2_2026) StdoutLine: {'line': b'-- Installing: /home/nh-laptop/FSB-racing/task/install/fsbrt_ros2_2026/share/fsbrt_ros2_2026/package.xml\n'}
+[13.098638] (fsbrt_ros2_2026) CommandEnded: {'returncode': 0}
+[13.114792] (fsbrt_ros2_2026) JobEnded: {'identifier': 'fsbrt_ros2_2026', 'rc': 0}
+[13.115319] (-) EventReactorShutdown: {}

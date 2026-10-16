@@ -71,8 +71,8 @@ public:
         "Parameters: max_speed_gain=%.3f, base_speed=%.3f, exp_a=%.6f, exp_b=%.8f, recovery_time=%.2f, brake_margin=%.2f",
         max_speed_gain_, base_speed_, exp_a_, exp_b_, recovery_time_, brake_margin_);
 
-        curvature_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/curvature.csv");
-        velocity_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/velocity.csv");
+        //curvature_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/curvature.csv");
+        //velocity_log.open("/home/nh-laptop/FSB-racing/task/fsbrt_ros2_2026/velocity.csv");
 
     }
 
@@ -169,8 +169,8 @@ private:
             }
         }
 
-        curvature_log << curr_pos_pair.first <<"," << curr_pos_pair.second << "," << curvature << "\n";
-        velocity_log << curr_pos_pair.first <<"," << curr_pos_pair.second << "," << current_velocity << "\n";
+        //curvature_log << curr_pos_pair.first <<"," << curr_pos_pair.second << "," << curvature << "\n";
+        //velocity_log << curr_pos_pair.first <<"," << curr_pos_pair.second << "," << current_velocity << "\n";
 
         // too fast for something ahead -> command that corner speed, which brakes as hard as
         // max_entry_speed assumes; otherwise go for the allowed speed
